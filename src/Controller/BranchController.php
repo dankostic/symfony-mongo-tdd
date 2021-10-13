@@ -14,7 +14,7 @@ class BranchController extends AbstractController
     public function index(): Response
     {
         return $this->json([
-            'message' => 'Welcome to your new controller!',
+            'message' => 'Welcome to your new controller, Have a nice day!',
             'path' => 'src/Controller/BranchController.php',
         ]);
     }
