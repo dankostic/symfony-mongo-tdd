@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BranchController extends AbstractController
 {
     /**
-     * I want patch this part of the commit
+     * I want patch this part of the commit indeed
      * @Route("/branch", name="branch", methods={"GET","HEAD"})
      */
     public function index(): Response
