@@ -9,13 +9,15 @@ use Symfony\Component\Routing\Annotation\Route;
 class BranchController extends AbstractController
 {
     /**
-     * @Route("/branch", name="branch")
+     * I want patch this part of the commit indeed
+     * @Route("/branch", name="branch", methods={"GET","HEAD"})
      */
     public function index(): Response
     {
         return $this->json([
-            'message' => 'Welcome to your new controller, Have a nice day!',
+            'message' => 'Welcome to your new controller, I want to split this into the two commits.',
             'path' => 'src/Controller/BranchController.php',
+            'year' => date('d-m-Y'),
         ]);
     }
 }
